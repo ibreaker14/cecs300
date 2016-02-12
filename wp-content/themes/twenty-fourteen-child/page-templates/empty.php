@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * Template Name: Empty Template
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area" style="background:pink;">
-		<div id="content" class="site-content" role="main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content emptyBackground" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -21,11 +21,6 @@ get_header(); ?>
 					 * (where ___ is the post format) and that will be used instead.
 					 */
 					get_template_part( 'content', get_post_format() );
-
-					//extra code to display custom field info
-					echo types_render_field("donut-field", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
-					echo "<br>";
-					echo types_render_field("custom-images", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
 
 					// Previous/next post navigation.
 					twentyfourteen_post_nav();
@@ -43,3 +38,5 @@ get_header(); ?>
 get_sidebar( 'content' );
 get_sidebar();
 get_footer();
+
+?>

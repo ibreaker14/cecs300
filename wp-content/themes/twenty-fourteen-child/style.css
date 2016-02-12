@@ -11,4 +11,8 @@
 
  /* == Add your own styles below this line ==
 --------------------------------------------*/
+.emptyBackground{
+	background:orange;
+	color: white;
+}
 

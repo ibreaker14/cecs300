@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contributor Page
+ * Template Name: Custom Contributor Page
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
